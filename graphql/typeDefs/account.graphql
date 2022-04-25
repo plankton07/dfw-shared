@@ -1,0 +1,25 @@
+type AccountInfoDto {
+    accountId: String!
+    loginId: String!
+    createdTime: String!
+    lastLoginTime: String!
+}
+type AuthOutput {
+    resultType: ResultType!
+    info: AccountInfoDto!
+    token: String
+}
+type AccountInfoOutput {
+    resultType: ResultType!
+    info: AccountInfoDto!
+}
+type AllAccountInfosOutput {
+    resultType: ResultType!
+    infos: AccountInfoDto!
+}
+
+
+
+input AccountInputDto {
+    loginId: String!
+}

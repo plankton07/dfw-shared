@@ -1,0 +1,20 @@
+type Query {
+    getItemData(itemIndex: Float!): String!
+    getEquipData(equipIndex: Float!, equipCode: Float!): String!
+    getCachePlayerInfo(accountId: Float!): PlayerInfoOutput!
+    getPlayerInfo(accountId: Float!): PlayerInfoOutput!
+    hello: String!
+    hello2: String!
+
+
+
+
+    auth(id: String!): AuthOutput!
+    login(accountId: Float!): AccountInfoOutput!
+    getAccountInfo(accountId: Float!): AccountInfoOutput!
+    getAllAccountInfo: AllAccountInfosOutput!
+}
+
+type Mutation {
+    createAccount(createAccountInput: AccountInputDto!): AccountInfoOutput!
+}
